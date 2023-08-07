@@ -39,13 +39,47 @@ namespace formMain
 
         private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show();
+            AltaUsuario altaUsuario = new AltaUsuario();
+            if (altaUsuario.ShowDialog() != DialogResult.OK)
+            {
+                this.Dispose();
+            }
         }
 
         private void alumnoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Mostrar ventana para cargar alunmno
-            //MessageBox.show();
+            AltaPersona altaPersona = new AltaPersona();
+            if (altaPersona.ShowDialog() != DialogResult.OK)
+            {
+                this.Dispose();
+            }
+        }
+
+        private void planToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaPlan altaPlan = new AltaPlan();
+            if (altaPlan.ShowDialog() != DialogResult.OK)
+            {
+                this.Dispose();
+            }
+        }
+
+        private void comisionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaComision altaComision = new AltaComision();
+            if (altaComision.ShowDialog() != DialogResult.OK)
+            {
+                this.Dispose();
+            }
+        }
+
+        private void materiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaMateria altaMateria = new AltaMateria();
+            if (altaMateria.ShowDialog() != DialogResult.OK)
+            {
+                this.Dispose();
+            }
         }
     }
 }
