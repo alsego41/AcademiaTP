@@ -36,6 +36,7 @@
             numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             btnAceptar = new System.Windows.Forms.Button();
             btnCancelar = new System.Windows.Forms.Button();
+            button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
@@ -109,11 +110,21 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(42, 135);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(75, 23);
+            button1.TabIndex = 8;
+            button1.Text = "Cancelar";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // AltaComision
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(305, 187);
+            Controls.Add(button1);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Controls.Add(numericUpDown1);
@@ -139,5 +150,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button button1;
     }
 }
